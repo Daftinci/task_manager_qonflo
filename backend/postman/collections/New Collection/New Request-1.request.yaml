@@ -1,0 +1,14 @@
+$kind: http-request
+name: New Request
+url: http://localhost:5001/api/task
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"title\":\"this is my second task\",\r
+
+    \    \"content\":\"this is some content\"\r
+
+    }"
+order: 2000

@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: nord --default, cupcake;
+}
+
+/* audit timeline: let each connector line use its own color (--line-bg)
+   instead of the step circle's color */
+.steps .step::before {
+  --line: var(--line-bg, var(--step-bg));
+  color: var(--line);
+  background-color: var(--line);
+}

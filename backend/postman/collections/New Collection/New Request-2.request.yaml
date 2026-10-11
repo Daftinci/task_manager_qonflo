@@ -1,0 +1,16 @@
+$kind: http-request
+name: New Request
+url: http://localhost:5001/api/task/6aca87c3f973f479f30c5003
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"title\":\"this should be deleted\",\r
+
+    \    \"content\":\"this is the updated content\",\r
+
+    \    \"progress\": \"to_do\"\r
+
+    }"
+order: 3000
