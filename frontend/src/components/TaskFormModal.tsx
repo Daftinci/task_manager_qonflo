@@ -63,7 +63,7 @@ const TaskFormModal = ({ open, task, onClose, onSubmit }: Props) => {
           />
           <textarea
             className="textarea w-full"
-            placeholder="Content"
+            placeholder="Description"
             required
             value={form.content}
             onChange={(e) => setForm({ ...form, content: e.target.value })}

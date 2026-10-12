@@ -27,7 +27,7 @@ const TaskTable = ({
       <thead>
         <tr>
           <th>Title</th>
-          <th>Content</th>
+          <th>Description</th>
           <th>Priority</th>
           <th>Progress</th>
         </tr>

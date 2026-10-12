@@ -8,7 +8,7 @@ dotenv.config()
 const app = express()
 const PORT = process.env.PORT || 5001
 
-connectDB();
+
 
 app.use(express.json())
 
@@ -19,6 +19,8 @@ app.use(express.json())
 
 app.use("/api/task", taskRoutes)
 
-app.listen(PORT, ()=>{
-    console.log("Server started in PORT:", PORT)
+connectDB().then(()=>{
+    app.listen(PORT, ()=>{
+        console.log("Server started at PORT:", PORT)
+    })
 })
